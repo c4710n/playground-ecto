@@ -4,7 +4,7 @@ config :demo,
   ecto_repos: [Demo.Repo]
 
 config :demo, Demo.Repo,
-  database: "demo_repo",
+  database: "playground-ecto",
   username: "postgres",
   password: "postgres",
   hostname: "dev-box",
