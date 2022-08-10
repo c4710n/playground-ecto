@@ -9,6 +9,7 @@ config :demo, Demo.Repo.PG,
   password: "postgres",
   hostname: "dev-box",
   port: 5432,
+  # don't change it, required by ecto_dev_logger
   log: false
 
 config :demo, Demo.Repo.MySQL,
@@ -17,4 +18,5 @@ config :demo, Demo.Repo.MySQL,
   password: "mysql",
   hostname: "dev-box",
   port: 3306,
+  # don't change it, required by ecto_dev_logger
   log: false
