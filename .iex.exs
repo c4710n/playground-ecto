@@ -1,6 +1,7 @@
 import Ecto.Query
 
-alias Demo.Repo
+alias Demo.Repo.PG
+alias Demo.Repo.MySQL
 
 alias Demo.Friends
 alias Demo.Friends.Person

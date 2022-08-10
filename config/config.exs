@@ -1,9 +1,9 @@
 import Config
 
 config :demo,
-  ecto_repos: [Demo.Repo, Demo.Repo.MySQL]
+  ecto_repos: [Demo.Repo.PG, Demo.Repo.MySQL]
 
-config :demo, Demo.Repo,
+config :demo, Demo.Repo.PG,
   database: "playground-ecto",
   username: "postgres",
   password: "postgres",

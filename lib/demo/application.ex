@@ -8,7 +8,8 @@ defmodule Demo.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Demo.Repo, []}
+      {Demo.Repo.PG, []},
+      {Demo.Repo.MySQL, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
