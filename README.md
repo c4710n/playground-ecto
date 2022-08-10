@@ -40,6 +40,20 @@ $ mix ecto.setup
 # enter IEx
 $ iex -S mix
 
+# Now, necessary modules, macros, functions has been imported to IEx. For example:
+# + Ecto.Query
+# + RepoPG
+# + RepoMySQL
+# + data entities
+# ...
+#
+# Checkout .iex.exs for more information.
+#
+
+# example queries
+iex> Post |> where(id: 1) |> RepoPG.all()
+iex> Post |> where(id: 1) |> RepoMySQL.all()
+
 # reset to original state
 $ mix ecto.reset
 ```
