@@ -8,11 +8,13 @@ config :demo, Demo.Repo.PG,
   username: "postgres",
   password: "postgres",
   hostname: "dev-box",
-  port: 5432
+  port: 5432,
+  log: false
 
 config :demo, Demo.Repo.MySQL,
   database: "playground-ecto",
   username: "root",
   password: "mysql",
   hostname: "dev-box",
-  port: 3306
+  port: 3306,
+  log: false

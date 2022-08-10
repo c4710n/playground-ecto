@@ -25,7 +25,8 @@ defmodule Demo.MixProject do
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:myxql, "~> 0.6.0"},
-      {:jason, "~> 1.0"}
+      {:jason, "~> 1.0"},
+      {:ecto_dev_logger, "~> 0.4"}
     ]
   end
 
