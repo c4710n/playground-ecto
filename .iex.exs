@@ -1,7 +1,7 @@
 import Ecto.Query
 
-alias Demo.Repo.PG
-alias Demo.Repo.MySQL
+alias Demo.Repo.PG, as: RepoPG
+alias Demo.Repo.MySQL, as: RepoMySQL
 
 alias Demo.Friends
 alias Demo.Friends.Person
